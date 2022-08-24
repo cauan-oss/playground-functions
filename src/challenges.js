@@ -42,9 +42,15 @@ function concatName(word) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
 
+  var calc = wins * 3;
+
+  var calc2 = wins + ties
+   
+  return calc + calc2
 }
+
 
 // Desafio 6
 function highestCount() {
