@@ -1,13 +1,28 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
-}
+function compareTrue(compara1, compara2) {
 
+
+ const girafa = true;
+  const elefante = true;
+  const macaco = false;
+
+  if (compara1 && compara2) {
+    return true
+  }
+
+
+  else {
+
+    return false
+  }
+
+}
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+function calcArea(base, height) {
+    var calc = (base * height) / 2
 
+    return calc
+}
 // Desafio 3
 function splitSentence() {
   // seu código aqui
