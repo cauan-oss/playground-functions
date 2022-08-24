@@ -30,13 +30,20 @@ function splitSentence(string) {
   return resultado
 }
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(word) {
+  
+  let first = word[0]
+
+   
+  let  last = word[word.length -1]
+
+  
+  return last + ', '+ first
 }
 
 // Desafio 5
 function footballPoints() {
-  // seu código aqui
+
 }
 
 // Desafio 6
