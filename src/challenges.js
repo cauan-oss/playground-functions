@@ -46,16 +46,47 @@ function footballPoints(wins, ties) {
 
   var calc = wins * 3;
 
-  var calc2 = wins + ties
-   
-  return calc + calc2
-}
+    var calc2 = ties 
+  
+    var calc3 = calc + calc2
+     
+    return calc3
+  }
+
 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(array) {
+  
+
+    var maiorNumero = array[0]
+  
+    var contador = 0 
+  
+    for(let i = 0 ; i < array.length; i += 1) {
+       
+       var numero = array[i]
+  
+       if(numero > maiorNumero) {
+         maiorNumero = numero
+       }
+   }
+  
+   
+    
+   for(let i = 0; i < array.length; i += 1){
+      if(array[i] === maiorNumero) {
+        contador += 1
+      }
+   }
+  
+   return contador
+  }
+
+ ///console.log(highestCount( [-2, -2, -1]))
+  
+  
+  
 
 // Desafio 7
 function catAndMouse() {
