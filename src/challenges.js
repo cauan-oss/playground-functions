@@ -52,9 +52,6 @@ function footballPoints(wins, ties) {
      
     return calc3
   }
-
-
-
 // Desafio 6
 function highestCount(array) {
   
@@ -82,21 +79,67 @@ function highestCount(array) {
   
    return contador
   }
-
- ///console.log(highestCount( [-2, -2, -1]))
-  
-  
-  
-
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  
+  posicaoCat1 = cat1 ;
+  
+  posicaoCat2 = cat2 ;
+
+  posicaoMouse = mouse ; 
+
+  calcPosition1 = posicaoCat1 - posicaoMouse
+
+  calcPosition2 = posicaoCat2 - posicaoMouse
+
+
+ if(calcPosition1 < calcPosition2) {
+  return "cat2 esta mais proximo do rato"
+ }
+ else if(calcPosition1 > calcPosition2) {
+  return "cat1 esta mais proximo do rato"
+ }
+
+ else if(calcPosition1 === calcPosition2){
+  return "os gatos se trombam e o rato foge"
+ }
+  return posicaoMouse, calcPosition1, calcPosition2
 }
+
+
+
+
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+
+  let novoArray = [];
+  
+for(let i = 0; i < array.length; i += 1) {
+  if(array[i] % 3 === 0 && array[i] % 5 === 0) {
+  novoArray.push("fizzBuzz"); 
+ } else if(array[i] % 5 === 0) {
+  novoArray.push("buzz");
+ } else if(array[i] % 3 === 0) {
+  novoArray.push("fizz");
+ }else {
+  novoArray.push("bug!");
+ }
+
 }
+return novoArray; 
+}
+    
+    
+  
+
+
+
+
+
+
+
+//console.log(array([1, 3, 5, 10, 11]))
 
 // Desafio 9
 function encode() {
