@@ -82,34 +82,28 @@ function highestCount(array) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   
-  posicaoCat1 = cat1 ;
+  let posicaoCat1 = cat1;
   
-  posicaoCat2 = cat2 ;
+  let posicaoCat2 = cat2;
 
-  posicaoMouse = mouse ; 
+  let posicaoMouse = mouse ; 
+  
+  let posicao = Math.abs(posicaoCat1 - posicaoMouse);
 
-  calcPosition1 = posicaoCat1 - posicaoMouse
+  let posicao2 = Math.abs(posicaoCat2 - posicaoMouse);
 
-  calcPosition2 = posicaoCat2 - posicaoMouse
-
-
- if(calcPosition1 < calcPosition2) {
-  return "cat2 esta mais proximo do rato"
+ if(posicao2 < posicao) {
+   return("cat2")
  }
- else if(calcPosition1 > calcPosition2) {
-  return "cat1 esta mais proximo do rato"
+ else if(posicao2 >  posicao) {
+   return("cat1")
  }
 
- else if(calcPosition1 === calcPosition2){
-  return "os gatos se trombam e o rato foge"
+ if(posicao === posicao2) {
+  return "os gatos trombam e o rato foge"
  }
-  return posicaoMouse, calcPosition1, calcPosition2
+
 }
-
-
-
-
-
 // Desafio 8
 function fizzBuzz(array) {
 
@@ -129,18 +123,6 @@ for(let i = 0; i < array.length; i += 1) {
 }
 return novoArray; 
 }
-    
-    
-  
-
-
-
-
-
-
-
-//console.log(array([1, 3, 5, 10, 11]))
-
 // Desafio 9
 function encode() {
   // seu código aqui
